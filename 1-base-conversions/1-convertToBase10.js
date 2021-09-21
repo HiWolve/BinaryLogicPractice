@@ -4,7 +4,51 @@
 
 const convertToBase10 = str => {
   // Your code here
-};
+  
+  let amount = 0;
+  let power = 0;
+
+  if (str[1] === "b"){
+    for (let i = str.length - 1; i > 1; i--){
+      let number = str[i];
+      amount += 2 ** power * number;
+
+      power++
+
+
+    }
+
+    return amount;
+
+  } 
+
+  if (str[1] === "x"){
+    for (let i = str.length - 1; i > 1; i--){
+      let number = str[i];
+      let letters = "abcdef"
+      if (letters.includes(number)){
+        number = letters.indexOf(number) + 10;
+      }
+      
+
+      amount += 16 ** power * number;
+
+      power++
+
+
+    }
+
+    return amount;
+
+
+
+  }
+  
+
+
+}
+
+
 
 /******************************************************************************/
 
