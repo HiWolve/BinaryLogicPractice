@@ -8,6 +8,19 @@ const addZeros = require('../utils/addZeros');
 
 const asciiTo8bit = str => {
   // Your code here
+  let answer = '';
+
+  for (let i = 0; i < str.length; i++){
+    let charValue = str.charCodeAt(i);
+    let base2 = charValue.toString(2);
+    while (base2.length < 8){base2 = "0" + base2} 
+    answer += base2;
+
+
+  }
+
+  return answer;
+  
 };
 
 /******************************************************************************/
