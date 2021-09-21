@@ -4,6 +4,55 @@
 
 const convertToBase2 = element => {
   // Your code here
+  let amount = 0;
+  let power = 0;
+
+  let answer = element; 
+
+  while (answer / 2 < 1 ){
+    answer 
+  }
+
+console.log(convertToBase2(4)); // 0b100
+console.log(convertToBase2(65)); // 0b1000001
+
+
+
+Divide the number by 2.
+Get the integer quotient for the next iteration.
+Get the remainder for the binary digit.
+Repeat the steps until the quotient is equal to 0
+
+  
+  
+  
+  
+  
+  
+  
+  
+  if(typeof element === "string"){
+    if (str[1] === "x"){
+      for (let i = str.length - 1; i > 1; i--){
+        let number = str[i];
+        let letters = "abcdef"
+        if (letters.includes(number)){
+          number = letters.indexOf(number) + 10;
+        }
+        
+  
+        amount += 16 ** power * number;
+  
+        power++
+  
+  
+      }
+    }
+  }
+
+
+
+  
 };
 
 /******************************************************************************/
